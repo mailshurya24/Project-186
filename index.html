@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"
+        <title>AFRAME My Own Project</title>
+
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene id = "main scene">
+        <a-entity position = "0 1 0" spe-particles = "
+        color: red, green, blue, yellow;
+        distribution: sphere;
+        radius: 1;
+        velocity: 1;
+        randomize-velocity: true;
+        velocity-spread: 2 0 2;
+        particle-count: 500;
+        acceleration: 0 1 0;
+        max-age: 4;
+        size: 1, 1, 1, 0;
+        duration: 1;
+        blending: additive;
+        active-multiplier: 1000"></a-entity>
+
+        <a-sky color = "#000000"></a-sky>
+        <a-camera position = "0 0 50"></a-camera>
+        </a-scene>
+    </body>
+</html>
